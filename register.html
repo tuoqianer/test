@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="shortcut icon" href="http://www.yougoogle.cn/favicon.ico">
+		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/login.css">
+		<script src="js/global.js" type="text/javascript"></script>
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/validator.js"></script>
+		<script type="text/javascript" src="js/validator_002.js"></script>
+		<script type="text/javascript" src="js/sendsms2.js"></script>
+		<title>会员注册 - 峨眉卓越</title>
+		<script charset="utf-8" src="moz-extension://a8c0be05-7226-4f29-877e-bebbe81ed846/js/btype.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/gwdang-notifier-ff.js"></script>
+	</head>
+
+	<body class="green bodybggreen0">
+		<div class="mheader">
+
+			<div class="mhead">
+				<div class="logo"><a href="index.html" target="_blank"><img src="images/logo.png" style="width: 80px;"
+						 title="峨眉卓越"></a></div>
+				<div class="tit">
+					<span>hi，欢迎来到峨眉卓越<a href="index.html" target="_blank"></a>站！<a href="publish.html"
+						 style="color:#87c0cd">发信息»</a></span>
+				</div>
+			</div>
+
+		</div>
+		<div class="clearfix"></div>
+		<div class="inner">
+			<div class="body">
+				<div class="registerpart">
+					<div class="step2">
+						<span>1. 选择类型</span>
+						<span>2. 注册个人会员</span>
+						<span>3. 登录会员中心</span>
+					</div>
+					<div class="regdetail">
+						<div class="partname">
+							<div class="li1"><a class="current">帐号注册</a></div>
+						</div>
+						<form name="registerform" id="registerform">
+							<div class="partinput">
+
+								<input name="mod" value="register" type="hidden">
+								<input name="reg_corp" value="0" type="hidden">
+								<input name="mixcode" value="97df44b0ad6abadc895972c087f1c76f" type="hidden">
+								<table class="formlogin" cellspacing="0" cellpadding="0" id="register">
+									<tbody>
+										<tr>
+											<td class="tdright">
+												<font color="red">*</font>用户名：
+											</td>
+											<td>
+												<input name="userid" v-model="name" id="reg_username" type="text" class="input input-large" require="true"
+												 datatype="userName|limit|ajax" url="http://www.yougoogle.cn/javascript.php?part=chk_remember" min="4" max="20"
+												 msg="可输入字母、数字、下划线，不得少于4个字符">&nbsp;
+											</td>
+										</tr>
+										<tr>
+											<td class="tdright">
+												<font color="red">*</font>电子邮箱：
+											</td>
+											<td><input name="email" v-model="email" type="text" class="input input-large" require="true" datatype="email|limit|ajax"
+												 url="http://www.yougoogle.cn/javascript.php?part=chk_remail" id="email" msg="用于找回密码，邮箱格式不正确">
+											</td>
+										</tr>
+										<tr>
+											<td class="tdright">
+												<font color="red">*</font>登录密码：
+											</td>
+											<td>
+												<input id="reg_password" v-model="pwd" name="userpwd" type="password" class="input input-large" require="true"
+												 datatype="limitB" min="6" max="16" msg="密码不得少于6个字符或超过16个字符！" maxlength="16">
+											</td>
+										</tr>
+										<tr>
+											<td class="tdright">
+												<font color="red">*</font>确认密码：
+											</td>
+											<td><input name="reuserpwd" v-model="pwd2" type="password" to="userpwd" class="input input-large" msg="两次输入的密码不一致"
+												 id="pwdconfirm" require="true" datatype="repeat">
+											</td>
+										</tr>
+										<tr>
+											<td></td>
+											<td style="color:#999">
+												<input style="width: 18px;height:18px;margin-right:10px;" name="agresstip" id="agresstip" type="checkbox"
+												 class="checkbox" required="true" msgid="agresstip" msg="请同意用户协议">我已阅读并同意用户协议
+											</td>
+										</tr>
+										<tr>
+											<td class="tdright" style="height: 44px"></td>
+											<td style="height: 44px"><input type="button" name="log_submit" value="立即注册" @click="submit" id="agreereg"
+												 class="go_reg">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</form>
+						<div class="xiyi">
+							<div id="xieyi">
+								<div class="xieye_nr">
+									<p>欢迎光临优谷分类信息！优谷分类信息致力于为您提供最优质、最便捷的服务。在访问优谷分类信息的同时，也请您仔细阅读我们的协议条款。您需要同意该条款才能注册成为我们的用户。</p>
+									<p>
+										<br>
+										一、总则<br>
+										1.1 优谷分类的所有权和运营权归广州优谷信息技术有限公司所有。<br>
+										1.2 用户在注册之前，应当仔细阅读本协议，并同意遵守本协议后方可成为注册用户。一旦注册成功，则用户与优谷分类之间自动形成协议关系，用户应当受本协议的约束。用户在使用特殊的服务或产品时，应当同意接受相关协议后方能使用。<br>
+										1.3 本协议则可由优谷分类随时更新，用户应当及时关注并同意本站不承担通知义务。本站的通知、公告、声明或其它类似内容是本协议的一部分。<br>
+										<br>
+										二、服务内容<br>
+										2.1 优谷分类的具体内容由本站根据实际情况提供。<br>
+										2.2
+										本站仅提供相关的网络服务，除此之外与相关网络服务有关的设备(如个人电脑、手机、及其他与接入互联网或移动网有关的装置)及所需的费用(如为接入互联网而支付的电话费及上网费、为使用移动网而支付的手机费)均应由用户自行负担。<br>
+										<br>
+										三、用户帐号注册及使用<br>
+										3.1 用户注册信息仅作身份认证和权限设计使用，经本站注册系统完成注册程序并通过身份认证的用户即成为正式用户，可以获得本站规定用户所应享有的一切权限；<br>
+										3.2
+										用户只能按照注册要求使用有电子邮箱注册，通过电子邮箱接收验证码完成注册。用户有义务保证密码和帐号的安全，用户利用该密码和帐号所进行的一切活动引起
+										的任何损失或损害，由用户自行承担全部责任，本站不承担任何责任。如用户发现帐号遭到未授权的使用或发生其他任何安全问题，应立即修改帐号密码并妥善保
+										管，如有必要，请通知本站。<br>
+										3.3 您在注册账户或使用优谷分类网过程中，需要提供电子邮箱，例如：为向您提供账户注册服务或用户身份识别，需要填写您的电子邮箱。<br>
+										3.3 用户如需注销注册信息，可以通过发送邮件的形式通知相关工作人员，邮箱地址为：support@iyougu.com，我们将会在7个工作日内完成信息注销工作，并以短信形式进行回复。<br>
+										<br>
+										四、使用规则<br>
+										4.1
+										遵守中华人民共和国相关法律法规，包括但不限于《中华人民共和国计算机信息系统安全保护条例》、《计算机软件保护条例》、《最高人民法院关于审理涉及计算
+										机网络著作权纠纷案件适用法律若干问题的解释(法释[2004]1号)》、《全国人大常委会关于维护互联网安全的决定》、《互联网电子公告服务管理规
+										定》、《互联网新闻信息服务管理规定》、《互联网著作权行政保护办法》和《信息网络传播权保护条例》等有关计算机互联网规定和知识产权的法律和法规、实施
+										办法。<br>
+										4.2 用户对其自行发表、上传或传送的内容负全部责任，所有用户不得在本站任何页面发布、转载、传送含有下列内容之一的信息，否则本站有权自行处理并不通知用户：<br>
+										(1)违反宪法确定的基本原则的；&nbsp;<br>
+										(2)危害国家安全，泄漏国家机密，颠覆国家政权，破坏国家统一的；&nbsp;<br>
+										(3)损害国家荣誉和利益的；&nbsp;<br>
+										(4)煽动民族仇恨、民族歧视，破坏民族团结的；&nbsp;<br>
+										(5)破坏国家宗教政策，宣扬邪教和封建迷信的；&nbsp;<br>
+										(6)散布谣言，扰乱社会秩序，破坏社会稳定的；<br>
+										(7)散布淫秽、色情、赌博、暴力、恐怖或者教唆犯罪的；&nbsp;<br>
+										(8)侮辱或者诽谤他人，侵害他人合法权益的；&nbsp;<br>
+										(9)煽动非法集会、结社、游行、示威、聚众扰乱社会秩序的；&nbsp;<br>
+										(10)以非法民间组织名义活动的；<br>
+										(11)含有法律、行政法规禁止的其他内容的。4.3
+										用户承诺对其发表或者上传于本站的所有信息(即属于《中华人民共和国著作权法》规定的作品，包括但不限于文字、图片、音乐、电影、表演和录音录像制品和电
+										脑程序等)均享有完整的知识产权，或者已经得到相关权利人的合法授权；如用户违反本条规定造成本站被第三人索赔的，用户应全额补偿本站一切费用(包括但不
+										限于各种赔偿费、诉讼代理费及为此支出的其它合理费用)；<br>
+										4.4
+										当第三方认为用户发表或者上传于本站的信息侵犯其权利，并根据《信息网络传播权保护条例》或者相关法律规定向本站发送权利通知书时，用户同意本站可以自行
+										判断决定删除涉嫌侵权信息，除非用户提交书面证据材料排除侵权的可能性，本站将不会自动恢复上述删除的信息；(1)不得为任何非法目的而使用网络服务系
+										统；<br>
+										(2)遵守所有与网络服务有关的网络协议、规定和程序；<br>
+										(3)不得利用本站进行任何可能对互联网的正常运转造成不利影响的行为；<br>
+										(4)不得利用本站进行任何不利于本站的行为。<br>
+										4.5 如用户在使用网络服务时违反上述任何规定，本站有权要求用户改正或直接采取一切必要的措施(包括但不限于删除用户张贴的内容、暂停或终止用户使用网络服务的权利)以减轻用户不当行为而造成的影响。<br>
+										<br>
+										五、信息收集和隐私保护<br>
+										5.1 信息收集<br>
+										(1) 依据法律法规进行邮箱实名制注册管理，您在注册账户或使用优谷分类网过程中，需要提供电子邮箱，为向您提供账户注册服务或用户身份识别。<br>
+										(2)
+										为了保障向您提供的服务的安全稳定运行，我们需要记录您登录情况，例如登录式及设备型号、IP地址、设备软件版本信息、设备识别码、设备标识符、所在地区、网络使用习惯以及其他与本网站服务相关的日志信息。如您不同意我们记录前述信息，可能无法完成风控验证。<br>
+										5.2信息收集目的<br>
+										(1)向您提供服务：我们使用您的个人数据完成并管理您在优谷分类网站上的操作。<br>
+										(2)账号管理：您可以通过优谷分类网站创建账号，我们将使用您所提供的信息来管理您的账号，并为您提供一系列的实用功能，您可以使用您的账号进行多种操作。<br>
+										(3)与您联系：回复及处理您所提出的疑问或要求、发送与服务相关的信息（如服务成功提示、提醒您继续未完成的操作）、我们也可能会向您发送问卷调查或邀请您对我们的服务提供反馈。<br>
+										(4)市场调研：我们有时会邀请您参与市场调查，以衡量您对我们的服务和网站的兴趣。<br>
+										(5) 提升服务的安全性和可靠性：我们可能会检测和预防欺诈行为、不法活动，将您的个人数据用于风险评估和安全目的。<br>
+										(6)日常运营：包括但不限于账户管理、客户验证、技术支持、网络维护、故障排除、内部行政事务及内部政策和程序、生成内部报告。<br>
+										5.2 信息隐私保护<br>
+										1、本站不对外公开或向第三方提供单个用户的注册资料及用户在使用网络服务时存储在本站的非公开内容，但下列情况除外：<br>
+										(1)事先获得用户的明确授权；<br>
+										(2)根据有关的法律法规要求；<br>
+										(3)按照相关政府主管部门的要求；<br>
+										(4)为维护社会公众的利益。<br>
+										5.3 本站可能会与第三方合作向用户提供相关的网络服务，在此情况下，如该第三方同意承担与本站同等的保护用户隐私的责任，则本站有权将用户的注册资料等提供给该第三方。<br>
+										5.4 对于收集到的用户个人信息我们承诺不对第三方透露，以保护个人隐私信息。另外，在不透露单个用户隐私资料的前提下，本站有权对整个用户数据库进行分析并对用户数据库进行商业上的利用。<br>
+										5.5我们设立了个人信息保护责任部门，针对个人信息收集、使用、共享、委托处理等开展个人信息安全影响评估。同时，我们建立了相关内控制度，对可能接触
+										到您的信息的工作人员采取最小够用授权原则；对工作人员处理您的信息的行为进行系统监控，不断对工作人员培训相关法律法规及隐私安全准则和安全意识强化宣
+										导，并每年组织全体工作人员参加安全考试。<br>
+										<br>
+										六、版权声明<br>
+										6.1 本站的文字、图片、音频、视频等版权均归广州优谷信息技术有限公司享有或与作者共同享有，未经本站许可，不得任意转载。<br>
+										6.2 本站特有的标识、版面设计、编排方式等版权均属广州优谷信息技术有限公司享有，未经本站许可，不得任意复制或转载。<br>
+										6.3 使用本站的任何内容均应注明“来源于优谷分类”及署上作者姓名，按法律规定需要支付稿酬的，应当通知本站及作者及支付稿酬，并独立承担一切法律责任。<br>
+										6.4 本站享有所有作品用于其它用途的优先权，包括但不限于网站、电子杂志、平面出版等，但在使用前会通知作者，并按同行业的标准支付稿酬。<br>
+										6.5 本站所有内容仅代表作者自己的立场和观点，与本站无关，由作者本人承担一切法律责任。<br>
+										6.6 恶意转载本站内容的，本站保留将其诉诸法律的权利。<br>
+										<br>
+										七、附则<br>
+										7.1 本协议的订立、执行和解释及争议的解决均应适用中华人民共和国法律。<br>
+										7.2 如本协议中的任何条款无论因何种原因完全或部分无效或不具有执行力，本协议的其余条款仍应有效并且有约束力。<br>
+										7.3 本协议解释权及修订权归广州优谷信息技术有限公司所有。<br>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="footer">
+				<p>联系地址：四川省乐山市峨眉山市白龙南路56号 </p>
+			</div>
+		</div>
+
+
+
+		<script language="javascript" type="text/javascript" src="js/validator2.js"></script>
+		<script type="text/javascript" src="js/cache.js"></script>
+		<script type="text/javascript" src="js/vue.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				new Vue({
+					el: "#register",
+					data: {
+						name: "",
+						email: "",
+						pwd: "",
+						pwd2: ""
+					},
+					methods: {
+						submit: function() {
+							if (this.name == "" || this.email == "" || this.pwd == "" || this.pwd2 == "") {
+								alert("请输入注册信息");
+								return;
+							}
+							var info = {
+								name: this.name,
+								email: this.email,
+								pwd: this.pwd
+							}
+							store.set("info", info);
+							alert("注册成功");
+							// window.location.href="";
+						},
+					},
+				});
+			});
+		</script>
+	</body>
+</html>
